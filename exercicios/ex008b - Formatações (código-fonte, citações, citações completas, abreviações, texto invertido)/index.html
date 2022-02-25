@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pre-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript, e o código-fonte fica entre a tag CODE.</p>
+    <!--O CODE não deixa o código orgranizado, apenas troca a fonte e espaçamento.-->
+    <!--Para organizar o código, pode-se mesclar a tag CODE com a tag PRE-->
+    
+    <p>Podemos utilizar a tag PRE (Pré-Formaração), que considera tudo que foi escrito no código e mostra na pagina HTML, inclusive as quebras de linha no código.</p>
+    <p>Exemplo de mescla entre as tags PRE e CODE:</p>
+    <pre>
+        <code>
+        num = int(input('digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR.')
+        else:
+            printf(f'O número {num} é ÍMPAR.')
+        print('Fim do programa')
+        </code>
+    </pre>
+
+    <h2> Citações </h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <p>Tal citação pode ser feita atraves da tag "Q".</p>
+
+    <h2>Citações completas</h2>
+    <p>Utiliza-se a tag BLOCKQUOTE para citar trechos maiores, formando um recuo na pagina.</p>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevemm 
+        os blocos de texto.
+    </blockquote>
+    <!--O cite dento da tag blockquote não modifica em nada na aparença do site, mas internamente o Google e outros programas
+    conseguem distinguir de onde veio a citação.-->
+
+    <h2>Abreviações</h2>
+    <P>Utiliiza-se a tag ABBR para acrescentar um título com significado à abreviação. De maneira que ao deixar o mouse sobre a abreviação aparece em um pop-up seu significado, conforme apresentado:</P>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    
+    <h2>Texto invertido</h2>
+    <p>Udtiliza-se a tag BDO para inverter a ordem da escrita. Dentro da tag temos da direção RTL (right to left) ou LRT (left to right)</p>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+
+</body>
+</html>
